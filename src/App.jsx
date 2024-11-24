@@ -1,32 +1,34 @@
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./Pages/Homepage/Homepage.jsx";
 import Experience from "./Pages/Experience/Experience.jsx";
+import Projects from "./Pages/Projects/Projects.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import styles from "./App.module.css";
 import Landing from "./Components/Landing/Landing.jsx";
+import Hero from "./Components/Hero/Hero.jsx";
+import AboutMe from "./Components/AboutMe/AboutMe.jsx";
 
 
 function App() {
-
     return (<div className={styles.App}>
-      <Navbar />
-      <Landing />
+    {/* <Navbar />
+    <Hero />
+    <AboutMe /> */}
+    <Navbar />
+    <Router>
+      <Routes>
+        <Route path="/" element={ <Homepage /> } />
+        <Route path="/experience" element={ <Experience /> } />
+        <Route path="/projects" element={ <Projects /> } />
+      </Routes>
+    </Router>
     </div>
     );
-  }
+}
   
-  export default App;
+export default App;
   
   
-  // <Navbar />
-  // <Router className={styles.App}>
-  //   <Navbar />
-  //   <Routes>
-  //     <Route path="/" element={ <Homepage /> } />
-  //     <Route path="/experience" element={ <Experience /> } />
-  //   </Routes>
-  // </Router>
-  // <Homepage />
 
 
 

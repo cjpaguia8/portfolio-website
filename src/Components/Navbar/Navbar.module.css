@@ -4,11 +4,11 @@
     background-color: var(--navbar-color);
     background: var(--navbar-color);
     background: rgb(36, 36, 36, 0.4);
-    /* background: linear-gradient(
+    background: linear-gradient(
         0deg, 
         rgba(36, 36, 36, 0) 0%, 
         rgba(36,36,36,1) 100%
-    ); */
+    );
     position: relative;
     display: flex;
     align-items: center;
