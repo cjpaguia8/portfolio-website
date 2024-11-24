@@ -18,7 +18,7 @@ const Navbar = () => {
             menuOpen 
               ? getImageUrl("nav/closeIcon.png")
               : getImageUrl("nav/menuIcon.png")
-          } 
+          }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
         />
@@ -26,16 +26,16 @@ const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <a href="#about">ABOUT</a>
+            <a href="about">ABOUT</a>
           </li>
           <li>
-            <a href="#experience">EXPERIENCE</a>
+            <a href="experience">EXPERIENCE</a>
           </li>
           <li>
-            <a href="#projects">PROJECTS</a>
+            <a href="projects">PROJECTS</a>
           </li>
           <li>
-            <a href="#contact">CONTACT</a>
+            <a href="contact">CONTACT</a>
           </li>
         </ul>
       </div>
