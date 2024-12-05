@@ -8,7 +8,7 @@ const Landing = () => {
     return (
         <div className={styles.landing}>
             {/* <ThreeJSCanvas /> */}
-            <ThreeJSTriangle />
+            {/* <ThreeJSTriangle /> */}
             {/* <video src={videoBg} autoPlay loop muted
             className='absolute w-full h-full object-cover z-[-1]'/> */}
             {/* <div className='absolute w-full h-full flex flex-col justify-center items-center'>
