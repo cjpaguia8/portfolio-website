@@ -10,7 +10,8 @@ import AboutMe from "./Components/AboutMe/AboutMe.jsx";
 
 
 function App() {
-    return (<div className={styles.App}>
+    return (
+    <div className={styles.App}>
     {/* <Navbar />
     <Hero />
     <AboutMe /> */}
