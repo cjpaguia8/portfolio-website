@@ -13,9 +13,13 @@ const ThreeJSCanvas = () => {
 
   useEffect(() => {
     // Create the scene, camera, and renderer
+    var objColor = new THREE.Color().setHex(0x00ff00);
+    var bgColor = new THREE.Color().setHex(0x000000);
+
+
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
-      75,
+      40,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
@@ -27,6 +31,9 @@ const ThreeJSCanvas = () => {
 
     // Append renderer's canvas to the container
     canvasContainerRef.current.appendChild(renderer.domElement);
+
+    // Set background color
+    scene.background = new THREE.Color(bgColor); 
 
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
