@@ -19,9 +19,9 @@
     font-family: 'Dual';
     /* font-weight: 100;
     font-stretch: narrower; */
-    border-bottom: 3px;
+    border-bottom: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: var(--color-text);
 }
 
 .title {

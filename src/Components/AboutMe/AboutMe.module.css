@@ -1,14 +1,14 @@
 .about {
-    display: flex;
+    /* display: flex; */
     /* background-color: rgba(15, 34, 69, 0.7);
     border-radius: 80px; */
-    margin: 100px;
-    padding: 40px;
-    z-index: 2;
+    /* margin: 100px; */
+    /* padding: 40px; */
+    /* z-index: 2; */
 }
 
 .aboutImg {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .content {
