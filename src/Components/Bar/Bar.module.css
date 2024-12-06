@@ -1,7 +1,14 @@
+@import "../../vars.css";
+
 .bar {
-    margin-top: 20vh;
+    position: absolute;
+    top: 100vh;
     width: 100%;
     height: 100px;
-    background-color: #174216;
+    background-color: #ffffff;
     z-index: 2;
+    /* outline-width: 5px;
+    outline-color: white;
+    outline-style:inset */
+    border-top: 3px solid var(--color-bg);
 }

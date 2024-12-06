@@ -7,14 +7,18 @@ import ThreeJSTriangle from "../ThreeJSCanvas/ThreeJSTriangle.jsx";
 const Landing = () => {
     return (
         <div className={styles.landing}>
+            
+
+
+
             {/* <ThreeJSCanvas /> */}
             {/* <ThreeJSTriangle /> */}
             {/* <video src={videoBg} autoPlay loop muted
-            className='absolute w-full h-full object-cover z-[-1]'/> */}
-            {/* <div className='absolute w-full h-full flex flex-col justify-center items-center'>
+            className='absolute w-full h-full object-cover z-[0]'/> */}
+            <div className='absolute w-full h-full flex flex-col justify-center items-center'>
                 <div className=''>Welcome</div>
                 <div className=''>to my site.</div>
-            </div> */}
+            </div>
         </div>
             // position: absolute;
             // width: 100%;

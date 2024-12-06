@@ -1,41 +1,80 @@
 @import "../../vars.css";
+@import "../../fonts.css";
 
 .navbar {
     background-color: var(--navbar-color);
     background: var(--navbar-color);
-    background: rgb(36, 36, 36, 0.4);
-    background: linear-gradient(
-        0deg, 
-        rgba(36, 36, 36, 0) 0%, 
-        rgba(36,36,36,1) 100%
-    );
-    position: relative;
+    background: var(--color-bg);
+    height: 60px;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 2.5% 20px;
+    padding: 0;
+    width: 100%;
+    /* padding: 20px 2.5% 20px; */
     /* padding-top: 61px; */
     z-index: 2;
-    margin: 0 0;
+    margin: 0 0 0 0;
+    font-family: 'Dual';
+    /* font-weight: 100;
+    font-stretch: narrower; */
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: black;
 }
 
 .title {
-    font-size: 30px;
-    font-weight: 400;
-    text-decoration: none;
-    color: var(--color-text)
+    height:60px;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    line-height: 43px;
+    cursor: pointer;
+    /* font-family: 'Dual'; */
+    font-family: 'DugasPro';
+    padding: 0 20px 0;
+    border-right: 1px;
+    border-style: solid;
+    border-color: var(--color-text);
+    padding-bottom: 10px;
 }
+
+.title::after {
+    content: ""; /* Creates a pseudo-element */
+    position: absolute;
+    bottom: 0; /* Aligns the underline at the bottom of the text */
+    left: 0; /* Start from the left */
+    width: 0%; /* Initially hidden */
+    height: 2px; /* Thickness of the underline */
+    background-color: var(--color-text); /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.title:hover::after {
+    width: 10%; /* Expands the underline from left to right */
+}
+
 
 .menu {
     display:flex;
-
+    border-left: 1px solid var(--color-text);
+    margin: 0;
 }
 
 .menuItems {
+    align-items: center;
+    height: 60px;
     display: flex;
     gap: 47px;
     list-style: none;
+    margin: 0 20px 0;
 }
+
+
 
 .menuItems a {
     font-size: 20px;
@@ -44,14 +83,22 @@
 }
 
 .menuBtn {
-    display: block;
+    height: 60px;
+    display: flex;
     cursor: pointer;
+    padding: 10px;
+    width: 60px;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    color: var(--color-text);
 }
 
 @media (min-width: 760px) {
     .menuBtn {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 830px) {
@@ -81,19 +128,14 @@
         align-items: center;
         gap: 13px;
         border-radius: 10px;
-        background: rgb(25,55, 109);
-        background: linear-gradient(
-            0deg, 
-            rgba(25, 55, 109, 0.2) 0%, 
-            rgba(25,55,109,1) 100%
-        );
+        background: var(--color-bg);
         padding: 24px 33px;
         box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
     }
 
     .menuOpen {
         display: flex;
-        z-index: 1;
+        z-index: 50;
     }
 
 }

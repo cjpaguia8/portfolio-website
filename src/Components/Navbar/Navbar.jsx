@@ -2,17 +2,23 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import {getImageUrl} from "../../utils";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { GrClose } from "react-icons/gr";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); //have navbar be closed by default
 
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        CHARLES PAGUIA
-      </a>
+      <a className={styles.title} href="/">CHARLIE</a>
       <div className={styles.menu}>
-        <img 
+        <div className={styles.menuBtn} onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen
+          ? <GrClose size={40}/>
+          : <RxHamburgerMenu size={40}/>
+          }
+        </div>
+        {/* <img 
           className={styles.menuBtn} 
           src={
             menuOpen 
@@ -21,7 +27,7 @@ const Navbar = () => {
           }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
-        />
+        /> */}
         <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         >
