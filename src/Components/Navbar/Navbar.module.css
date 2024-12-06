@@ -25,7 +25,8 @@
 }
 
 .title {
-    height:60px;
+    width: 100px;
+    height: 60px;
     color: var(--color-text);
     display: flex;
     flex-direction: column;
@@ -34,20 +35,18 @@
     font-size: 40px;
     line-height: 43px;
     cursor: pointer;
-    /* font-family: 'Dual'; */
-    font-family: 'DugasPro';
-    padding: 0 20px 0;
-    border-right: 1px;
-    border-style: solid;
-    border-color: var(--color-text);
+    font-family: 'DugasPro'; /* Font in use */
+    padding: 0 20px;
+    border-right: 1px solid var(--color-text);
     padding-bottom: 10px;
+    position: relative; /* Establish a positioning context for ::after */
 }
 
 .title::after {
     content: ""; /* Creates a pseudo-element */
-    position: absolute;
-    bottom: 0; /* Aligns the underline at the bottom of the text */
-    left: 0; /* Start from the left */
+    position: absolute; /* Position relative to the .title element */
+    bottom: 3px; /* Aligns the underline at the bottom of the title */
+    left: 0; /* Starts the underline at the left of the title */
     width: 0%; /* Initially hidden */
     height: 2px; /* Thickness of the underline */
     background-color: var(--color-text); /* Color of the underline */
@@ -55,8 +54,9 @@
 }
 
 .title:hover::after {
-    width: 10%; /* Expands the underline from left to right */
+    width: 90%; /* Expands the underline to match the full width of the title */
 }
+
 
 
 .menu {
@@ -80,7 +80,24 @@
     font-size: 20px;
     color: var(--color-text);
     text-decoration: none;
+    position: relative; /* Creates a positioning context for the pseudo-element */
 }
+
+.menuItems a::after {
+    content: ""; /* Creates a pseudo-element */
+    position: absolute; /* Positions relative to the <a> element */
+    left: 0; /* Starts from the left of the word */
+    bottom: -2px; /* Aligns the underline at the bottom of the text */
+    width: 0%; /* Initially hidden */
+    height: 2px; /* Thickness of the underline */
+    background-color: var(--color-text); /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.menuItems a:hover::after {
+    width: 100%; /* Expands the underline to match the width of the word */
+}
+
 
 .menuBtn {
     height: 60px;

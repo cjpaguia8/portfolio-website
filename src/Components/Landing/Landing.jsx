@@ -1,4 +1,5 @@
-import videoBg from '../../../assets/LiquidAcid.mp4';
+import videoBg from '../../../assets/SpectrumGraph.1.mp4';
+// import videoBg from '../../../assets/LiquidAcid.mp4';
 import styles from "./Landing.module.css";
 import WebGLCanvas from "../WebGLCanvas/WebGLCanvas.jsx";
 import ThreeJSCanvas from "../ThreeJSCanvas/ThreeJSCanvas.jsx";
@@ -7,14 +8,10 @@ import ThreeJSTriangle from "../ThreeJSCanvas/ThreeJSTriangle.jsx";
 const Landing = () => {
     return (
         <div className={styles.landing}>
-            
-
-
-
             {/* <ThreeJSCanvas /> */}
             {/* <ThreeJSTriangle /> */}
-            {/* <video src={videoBg} autoPlay loop muted
-            className='absolute w-full h-full object-cover z-[0]'/> */}
+            <video src={videoBg} autoPlay loop muted
+            className='absolute w-full h-full object-cover z-[0]'/>
             <div className='absolute w-full h-full flex flex-col justify-center items-center'>
                 <div className=''>Welcome</div>
                 <div className=''>to my site.</div>
