@@ -1,15 +1,14 @@
 @font-face {
     font-family: 'Basheq';
-    src: url('./assets/fonts/BasheqVintageDemoVersionRegular-ov13x.ttf');
+    src: url('/fonts/BasheqVintageDemoVersionRegular-ov13x.ttf');
 }
 
 @font-face {
     font-family: 'DugasPro';
-    /* src: url('./assets/fonts/Dugas Pro/ttf/DugasPro-B.ttf'); */
-    src: url('./assets/fonts/DugasPro-BlackUltra-condensed.ttf');
+    src: url('/fonts/DugasPro-BlackUltra-condensed.ttf');
 }
 
 @font-face {
     font-family: 'Dual';
-    src: url('./assets/fonts/Dual-300.ttf');
+    src: url('/fonts/Dual-300.ttf');
 }
