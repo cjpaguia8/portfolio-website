@@ -3,9 +3,9 @@ import styles from './Bar.module.css';
 
 const Bar = () => {
   return <div className={styles.bar}>
-    <div className={styles.top}>1</div>
-    <div className={styles.middle}>2</div>
-    <div className={styles.bottom}>3</div>
+    <div className={styles.top}></div>
+    <div className={styles.middle}></div>
+    <div className={styles.bottom}></div>
   </div>;
 };
 

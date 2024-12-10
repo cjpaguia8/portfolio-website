@@ -13,8 +13,8 @@ const ThreeJSCanvas = () => {
 
   useEffect(() => {
     // Create the scene, camera, and renderer
-    var objColor = new THREE.Color().setHex(0x00ff00);
-    var bgColor = new THREE.Color().setHex(0x000000);
+    var objColor = new THREE.Color().setHex(0xfff70f);
+    var bgColor = new THREE.Color().setHex(0x262523);
 
 
     const scene = new THREE.Scene();
@@ -24,16 +24,41 @@ const ThreeJSCanvas = () => {
       0.1,
       1000
     );
-    const clock = new THREE.Clock();
-
+    const clock = new THREE.Clock();    
+    
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
 
+
+
+    //Create video for background
+    const videoTexture = new THREE.TextureLoader().load('../../../assets/outputflip.mp4');
+    videoTexture.mapping = THREE.videoTextureReflectionMapping;
+
+    // Things Github Copilot suggested, removing it does not change colors so I thing it's not the problem
+    videoTexture.magFilter = THREE.LinearFilter;
+    videoTexture.minFilter = THREE.LinearMipMapLinearFilter;
+    videoTexture.format = THREE.RGBFormat;
+    videoTexture.encoding = THREE.sRGBEncoding;
+    videoTexture.anisotropy = 16;
+
+    // scene.background = videoTexture;
+
+
+    // const video = document.createElement("video");
+    // video.src = '../../../assets/outputflip.mp4';
+    // video.loop = true;
+    // video.muted = true;
+    // video.autoplay = true;
+    // video.playsInline = true; //Ensures compatibility with mobile browsers
+    // video.play();
+
+    // const videoTexture = new THREE.VideoTexture(video);
+    // videoTexture.format = THREE.RGBFormat;
+
+
     // Append renderer's canvas to the container
     canvasContainerRef.current.appendChild(renderer.domElement);
-
-    // Set background color
-    scene.background = new THREE.Color(bgColor); 
 
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -42,15 +67,14 @@ const ThreeJSCanvas = () => {
     });
 
     // Set background color
-    scene.background = new THREE.Color(bgColor);
+    // scene.background = new THREE.Color(bgColor);
+    scene.background = videoTexture;
 
-    const axesHelper = new THREE.AxesHelper( 5 );
-    scene.add( axesHelper );
-
+    // const axesHelper = new THREE.AxesHelper( 5 );
+    // scene.add( axesHelper );
 
 
     // Add geometries to the scene
-    // const geometry = new THREE.BoxGeometry();
     const torusGeo = new THREE.TorusGeometry(1.5, 0.2);
     const tor2Geo = new THREE.TorusGeometry(2, 0.15);
     const sphereGeo = new THREE.SphereGeometry(0.5);
@@ -70,18 +94,12 @@ const ThreeJSCanvas = () => {
     // Animation loop
     const animate = () => {
       const elapsedTime = clock.getElapsedTime();
-      // const delta = clock.getDelta();
+
 
       requestAnimationFrame(animate);
       // torus.rotation.x += 0.01;
       torus.rotation.y += 0.02;
-      // sphere.rotation.x += 0.01;
-      // sphere.rotation.y += 0.01;
-      sphere.position.x = 0.5*Math.cos(elapsedTime * 5);
-      sphere.position.y = 0.5*Math.sin(elapsedTime * 5);
-      sphere.position.z = 0.5*(Math.cos(elapsedTime * 5) * Math.sin(elapsedTime*5));
       torus2.rotation.x += 0.03;
-      // torus2.rotation.y += 0.03;
       renderer.render(scene, camera);
     };
 

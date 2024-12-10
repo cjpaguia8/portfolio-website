@@ -1,14 +1,31 @@
-.about {
-    /* display: flex; */
+.content {
+    display: flex;
+    padding: 10%;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+
+
+    /* position: relative; */
     /* background-color: rgba(15, 34, 69, 0.7);
     border-radius: 80px; */
     /* margin: 100px; */
     /* padding: 40px; */
     /* z-index: 2; */
+    /* text-shadow: 2px 2px 2px black; */
 }
+
+
 
 .aboutImg {
     /* width: 50%; */
+    height: 10vh;
 }
 
 .content {

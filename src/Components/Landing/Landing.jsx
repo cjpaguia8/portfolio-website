@@ -11,34 +11,12 @@ const Landing = () => {
             {/* <ThreeJSCanvas /> */}
             {/* <ThreeJSTriangle /> */}
             <video src={videoBg} autoPlay loop muted
-            className='absolute w-full h-full object-cover z-[0]'/>
+            className={styles.video} />
             <div className={styles.welcome}>
-                <h1>Charles</h1>
-                <h1>Paguia</h1>
-                {/* <h1>Portfolio</h1> */}
+                <h1>C h a r l i e</h1>
+                <h1>P a g u i a</h1>
             </div>
         </div>
-            // position: absolute;
-            // width: 100%;
-            // height: 100%;
-            // top: 0;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: center;
-            // color: white;
-        // <div className={styles.landing}>
-        //     <video className='flex' src={videoBg} autoPlay loop muted />
-        //         <div className='flex justify-center align-center'>
-        //             <div className={styles.content}>
-        //             <h1>Welcome</h1>
-        //             <p>To my site.</p>
-        //         </div>
-        //     </div>
-        // </div>
-        // <div className={styles.landing}>
-        //     <ThreeJSCanvas />
-        // </div>
     );
 };
 
