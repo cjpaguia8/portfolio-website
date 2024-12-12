@@ -1,0 +1,19 @@
+{
+    "hobbies": [
+      {
+        "title": "Software Developer",
+        "description": "I'm a software developer with experience in building automative business processes."
+      },
+      {
+        "title": "Audiovisual Artist",
+        "description": "In freetime I enjoy coding audio-reactive visual art."
+      },
+      {
+        "title": "Musician",
+        "description": "Over 16+ years of playing classical and jazz piano along with a hobby for creating modsectionar synthesizers."
+      }
+    ],
+    "lorem": "impsum"
+
+}
+  
