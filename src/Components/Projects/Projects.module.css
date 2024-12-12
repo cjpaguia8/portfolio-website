@@ -1,9 +1,21 @@
-
 .projects {
     width: 80%;
     height: 50vh;
     background-color: var(--color-green);
     border-radius: 40px;
     margin: 10% auto;
+    align-items: center;
+    justify-content: top;
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+}
 
+.project {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: green;
+    text-align: left;
 }

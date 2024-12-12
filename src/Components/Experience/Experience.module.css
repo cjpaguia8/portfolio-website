@@ -1,8 +1,41 @@
-
 .experience {
     width: 80%;
     height: 50vh;
     background-color: var(--color-text);
     border-radius: 40px;
     margin: 10% auto;
+    color: black;
+    align-items: center;
+    justify-content: top;
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.expobj {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: wheat;
+    text-align: left;
+}
+  
+.position {
+font-size: 1.5em;
+margin: 0 0 10px;
+color: #333;
+}
+
+.company {
+font-size: 1.5em;
+color: #666;
+}
+
+.dates {
+
+}
+
+.description {
+
 }

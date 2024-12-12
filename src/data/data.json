@@ -1,19 +1,122 @@
 {
-    "hobbies": [
-      {
-        "title": "Software Developer",
-        "description": "I'm a software developer with experience in building automative business processes."
-      },
-      {
-        "title": "Audiovisual Artist",
-        "description": "In freetime I enjoy coding audio-reactive visual art."
-      },
-      {
-        "title": "Musician",
-        "description": "Over 16+ years of playing classical and jazz piano along with a hobby for creating modsectionar synthesizers."
-      }
-    ],
-    "lorem": "impsum"
-
+  "about": "Recent Computer Science graduate and eager to dive into the field. I consider myself very curiosity driven, easily adaptable, and passionate to perfect any project I work on. Always looking for more to learn.",
+  "hobbies": [
+    {
+      "title": "Software Developer",
+      "description": "I'm a software developer with experience in building automative business processes."
+    },
+    {
+      "title": "Audiovisual Artist",
+      "description": "In freetime I enjoy coding audio-reactive visual art."
+    },
+    {
+      "title": "Musician",
+      "description": "Over 16+ years of playing classical and jazz piano along with a hobby for creating modsectionar synthesizers."
+    }
+  ],
+  "projects": [
+    {
+      "title": "ClimateHacks Hackathon hosted by MajorLeagueHacking",
+      "dates": "May 2023",
+      "description": "Created a small react-based web app to play songs for as long as you should be showering to conerve water. Leveraged Spotifys API in this 40 hour long hackathon with two team members. Despite the small time-frame a lot was learned on the spot for this small project"
+    },
+    {
+      "title": "ConAgra Building Remodel",
+      "dates": "Aug 2019 - Oct 2019",
+      "description": "Won second place in competition to remodel a local business headquarters. Personally presented the details of the project to the Mayor of Naperville, along with members of the City Planning Council and Chief Engineer of the original building."
+    }
+  ],
+  "experience": [
+    {
+      "position": "Java Programming Team Lead",
+      "company": "IBM/Illinois Tech",
+      "dates": "Aug 2022 - May 2023",
+      "description": "Remote Telescope Control Project w/ IBM at Illinois Tech"
+    },
+    {
+      "position": "Software Development and Data Analytics Intern",
+      "company": "NXT Capital",
+      "dates": "June 2023 - Aug 2024",
+      "description": "Worked on various different projects aimed at improving efficiency of existing business processes. Trained AI, generated reports, wrote database queries, oversaw projects, quality checked data, and created cross-company automations"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Java",
+      "image": "/icons/java.svg"
+    },
+    {
+      "name": "Javascript",
+      "image": "/icons/javascript.svg"
+    },
+    {
+      "name": "C",
+      "image": "/icons/Clang.svg"
+    },
+    {
+      "name": "CSS",
+      "image": "/icons/css.svg"
+    },
+    {
+      "name": "Dart",
+      "image": "/icons/dart.svg"
+    },
+    {
+      "name": "Docker",
+      "image": "/icons/docker.svg"
+    },
+    {
+      "name": "Flutter",
+      "image": "/icons/flutter.svg"
+    },
+    {
+      "name": "Git",
+      "image": "/icons/git.svg"
+    },
+    {
+      "name": "Java",
+      "image": "/icons/java.svg"
+    },
+    {
+      "name": "Postgresql",
+      "image": "/icons/postgresql.svg"
+    },
+    {
+      "name": "reactjs",
+      "image": "/icons/reactjs.svg"
+    },
+    {
+      "name": "",
+      "image": "/icons/.svg"
+    },
+    {
+      "name": "",
+      "image": "/icons/.svg"
+    },
+    {
+      "name": "",
+      "image": "/icons/.svg"
+    },
+    {
+      "name": "",
+      "image": "/icons/.svg"
+    },
+    {
+      "name": "",
+      "image": "/icons/.svg"
+    },
+    {
+      "name": "",
+      "image": "/icons/.svg"
+    },
+    {
+      "name": "",
+      "image": "/icons/.svg"
+    },
+    {
+      "name": "",
+      "image": "/icons/.svg"
+    }
+  ]
 }
   
