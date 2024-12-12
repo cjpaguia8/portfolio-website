@@ -1,7 +1,8 @@
 
 .experience {
-    width: 100%;
+    width: 80%;
     height: 50vh;
     background-color: var(--color-text);
     border-radius: 40px;
+    margin: 10% auto;
 }

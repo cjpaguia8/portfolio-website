@@ -1,7 +1,6 @@
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./Pages/Homepage/Homepage.jsx";
-import Experience from "./Pages/Experience/Experience.jsx";
-import Projects from "./Pages/Projects/Projects.jsx";
+import Art from "./Pages/Art/Art.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import styles from "./App.module.css";
 import Landing from "./Components/Landing/Landing.jsx";
@@ -16,8 +15,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={ <Homepage /> } />
-        <Route path="/experience" element={ <Experience /> } />
-        <Route path="/projects" element={ <Projects /> } />
+        <Route path="/art" element={ <Art /> } />
       </Routes>
     </Router>
     </div>
