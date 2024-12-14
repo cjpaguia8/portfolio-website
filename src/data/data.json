@@ -50,8 +50,8 @@
       "image": "/icons/javascript.svg"
     },
     {
-      "name": "C",
-      "image": "/icons/Clang.svg"
+      "name": "C Lang",
+      "image": "/icons/c_lang.svg"
     },
     {
       "name": "CSS",
@@ -74,8 +74,8 @@
       "image": "/icons/git.svg"
     },
     {
-      "name": "Java",
-      "image": "/icons/java.svg"
+      "name": "Github",
+      "image": "/icons/github_icon.svg"
     },
     {
       "name": "Postgresql",
@@ -86,36 +86,40 @@
       "image": "/icons/reactjs.svg"
     },
     {
-      "name": "",
-      "image": "/icons/.svg"
+      "name": "Adobe Illustrator",
+      "image": "/icons/adobeillustrator.svg"
     },
     {
-      "name": "",
-      "image": "/icons/.svg"
+      "name": "HTML",
+      "image": "/icons/html5.svg"
     },
     {
-      "name": "",
-      "image": "/icons/.svg"
+      "name": "NodeJS",
+      "image": "/icons/nodejs.svg"
     },
     {
-      "name": "",
-      "image": "/icons/.svg"
+      "name": "Adobe Photoshop",
+      "image": "/icons/photoshop.svg"
     },
     {
-      "name": "",
-      "image": "/icons/.svg"
+      "name": "Postman",
+      "image": "/icons/postman.svg"
     },
     {
-      "name": "",
-      "image": "/icons/.svg"
+      "name": "Python",
+      "image": "/icons/python.svg"
     },
     {
-      "name": "",
-      "image": "/icons/.svg"
+      "name": "Rhino3D",
+      "image": "/icons/Rhino3D.svg"
     },
     {
-      "name": "",
-      "image": "/icons/.svg"
+      "name": "SQL",
+      "image": "/icons/sql.svg"
+    },
+    {
+      "name": "Vercel",
+      "image": "/icons/vercel.svg"
     }
   ]
 }

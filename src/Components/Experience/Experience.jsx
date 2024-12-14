@@ -4,14 +4,14 @@ import data from '../../data/data.json';
 
 const Experience = () => {
     return (
-    <section className={styles.experience}>
+    <section className={styles.expSection}>
       <h1>Experience</h1>
-      <div>
+      <div className={styles.expBox}>
       {data.experience.map((expobj, index) => (
           <div className={styles.expobj} key={index}>
-            <h1 className={styles.position}>{expobj.position}</h1>
-            <h2 className={styles.company}>{expobj.company}</h2>
-            <h3 className={styles.dates}>{expobj.dates}</h3>
+            <p className={styles.position}>{expobj.position}</p>
+            <p className={styles.company}>{expobj.company}</p>
+            <p className={styles.dates}>{expobj.dates}</p>
             <p className={styles.description}>{expobj.description}</p>
           </div>
       ))}

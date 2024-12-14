@@ -1,13 +1,25 @@
-.experience {
+.expSection {
     width: 80%;
-    height: 50vh;
+    height: auto;
     background-color: var(--color-text);
     border-radius: 40px;
     margin: 10% auto;
     color: black;
     align-items: center;
-    justify-content: top;
+    justify-content:space-evenly;
     display:flex;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.expSection h1 {
+    font-size: 100px;
+    color: var(--color-bg);
+}
+
+.expBox {
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     padding: 50px;
 }
@@ -22,14 +34,14 @@
 }
   
 .position {
-font-size: 1.5em;
-margin: 0 0 10px;
-color: #333;
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
 }
 
 .company {
-font-size: 1.5em;
-color: #666;
+    font-size: 1.5em;
+    color: #666;
 }
 
 .dates {
